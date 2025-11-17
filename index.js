@@ -359,3 +359,122 @@ function totalPriceOfTwoItemsNew(price1, price2) {
 totalPriceOfTwoItemsNew(200, 100)
 totalPriceOfTwoItemsNew(45, 90)
 totalPriceOfTwoItemsNew(320, 98)
+
+
+function printMathScore (studentName, studentMathScore) {
+  let report = `Hello ${studentName} your math score is ${studentMathScore}`
+  console.log(report)
+}
+
+printMathScore("Damilola", 50)
+printMathScore("Femi", 90)
+printMathScore("Chidera", 100)
+
+
+// RETURN STATEMENT
+function mathScoreRecord (nameStudent, mathScoreStudent) {
+  let scoreReport = `Hey ${nameStudent} your math score for this semester is ${mathScoreStudent}`
+
+  return scoreReport
+}
+
+let studentScoreReport = mathScoreRecord("Femi", 100)
+console.log(studentScoreReport)
+
+let samuelsScore = mathScoreRecord("Samuel", 69.5)
+console.log(samuelsScore)
+
+
+
+function averageCalculator(num1, num2, num3, num4) {
+  let average = (num1 + num2 + num3 + num4)/4
+
+  return average
+}
+
+let averageOutcome = averageCalculator(23,24,26,33)
+console.log(averageOutcome)
+
+
+//RETURN STATEMENT PRACTICAL
+function designStyles(colours, texts, widgets, grids) {
+  let productStyle = `The ${colours} are the essense of the design, while the ${texts} are the communications tool of the product, followed by the ${widgets} which helps with consistency and the ${grids} helps with aligning your information across your design`
+
+  return productStyle
+}
+
+let productCommunication = designStyles("blue colour", "Sans Seriff Fonts", "Style guide", "2 point grid")
+console.log(productCommunication)
+
+
+// let x = 10 + '5'
+// console.log(x)
+
+// let count =5; count = 10;
+// console.log(count)
+
+// let isStudent = true;
+// console.log(isStudent)
+
+// let percentage = 10 % 3
+// console.log(percentage)
+
+// let figure = 10++
+// console.log(figure)
+
+function add (a,b = 10) {
+  let addtionalFigure = (a + b)
+  
+  return addtionalFigure
+}
+
+let moreFigure = add (5,2)
+console.log(moreFigure)
+
+let msg = 'Hello';
+console.log(msg)
+
+// TYPE OF
+let myVariable = 100
+console.log(typeof myVariable)
+
+let myvariable = {
+  firstName : "Chinedu",
+  lastname : "Okeke",
+  Role : "Product Design"
+}
+
+console.log(typeof myvariable)
+
+// TERNARY OPERATORS
+let votingAge = 18
+let voterAge = 14
+
+if(votingAge >= voterAge) {
+  console.log("Eligible to vote")
+} else {"Not elgible to vote"
+
+}
+
+
+let votersDetail = votingAge >= voterAge ? "I want to vote" : "I =don't want to vote"
+
+console.log(votersDetail)
+
+
+let figuresLarge = 20 > 40 ? "hot" : "cold"
+console.log(figuresLarge)
+
+
+// OBJECT DESTRUCTION
+const car = {
+  brand : "Hyundai",
+  model : "Santafe",
+  year : 2018,
+  color : "Black",
+  engineType : "GDI",
+  mileage : 55000
+}
+
+const {brand} = car
+console.log(brand)
