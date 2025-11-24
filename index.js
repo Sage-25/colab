@@ -473,8 +473,79 @@ const car = {
   year : 2018,
   color : "Black",
   engineType : "GDI",
-  mileage : 55000
+  mileage : 55000,
+  roadWorthiness : function () {
+    let value = 100000 - this.mileage
+    let roadW = value > 60000 ? "Not Road Worthy" : "Very Road Worthy"
+
+    return roadW
+  }
 }
 
-const {brand} = car
-console.log(brand)
+let mileageResult = car.roadWorthiness()
+console.log(mileageResult)
+
+const {brand:bd, model:md, engineType:et} = car
+console.log(et, bd, md)
+
+
+const house = {
+  color : "Milk",
+  size : "340sqm",
+  style : "Duplex"
+}
+
+const {size} = house
+house.size = "800sqm"
+console.log (size)
+
+
+const user = {
+  name : "Ada",
+  age : 25,
+  address : {
+    city : "Lagos",
+    country : "Nigeria",
+    street : "Yaba"
+  }
+}
+
+const {age, address: {country}} = user
+console.log(country)
+
+
+//METHOD
+const person = {
+  name : "Anne",
+  city : "Enugu",
+  age : 23,
+  adultHoodChecker : function () {
+    let outcome = this.age > 18 ? "Adult" : "Non-Adult"
+    return outcome
+  }
+}
+
+console.log(person.adultHoodChecker())
+
+
+function addTwoNumbers(a, b){
+  let sum = a + b 
+  return sum
+}
+
+// FUNCTION EXPRESSION
+const sayMyName = function(){
+  console.log("Chinedu Okeke")
+}
+
+sayMyName()
+
+
+const addTwoNumberrs = function(a,b) {
+  let sumNumber = a + b
+  console.log(sumNumber)
+}
+
+addTwoNumberrs(23, 12)
+
+// ARROW FUNCTION
