@@ -549,3 +549,333 @@ const addTwoNumberrs = function(a,b) {
 addTwoNumberrs(23, 12)
 
 // ARROW FUNCTION
+const hereIsMyName = () => {
+  console.log("Chinedu")
+}
+
+hereIsMyName()
+
+const sayUserName = (username, ageRange) => {
+  let said = `Your user name is ${username} and I am ${ageRange} years old`
+  console.log(said)
+}
+
+sayUserName("Linda", 18)
+
+
+// SINGLE ARROW FUNCTION
+const namely = myName => `Call me ${myName}`
+
+console.log(namely("Chinedu"))
+
+const sayName = (firstName, lastName) => {
+
+}
+
+// ARRAY (Data Structure for listing data)
+[
+  "Anjola",
+  "Damilola",
+  "Joy",
+  "Christian"
+]
+
+[
+  23,
+  24,
+  26,
+  "Abuja",
+  "Chinedu",
+  false
+]
+
+const countrysToVisit = ["Greece", "SouthAfrica", "United Kingdom", "United States"]
+
+console.log(countrysToVisit)
+
+const aiCompanies = ["ChatGPT", "Gemini", "Perplexity"]
+let result = aiCompanies[0]
+aiCompanies[0] = "Bolt"
+let len = aiCompanies.length
+
+console.log(len)
+
+// ARRAYS PART II
+// [`Angola`, `New Zealand`, `Ghana`, `Congo`, `Madagascar`]
+
+// ["Dell", "Lenovo", "Apple", "HP"]
+
+// [23, 45, 20, 44, 32]
+
+
+// const carA = 
+
+// const carB = 
+
+// const carC = 
+
+const listOfCarsToFix = [
+  {
+    carName : "Mercedes",
+    carColor : "White",
+    carChasis : "TBGDHUWIDUYDLSADW",
+    carModel : "GLE",
+    carYear : 2020
+  },
+
+  {
+    carName : "Toyota",
+    carColor : "Black",
+    carChasis : "EWRJENDVCJDFE",
+    carModel : "Camry",
+    carYear : 2018
+  },
+
+  {
+    carName : "Toyota",
+    carColor : "Silver",
+    carChasis : "LOEIOSYSNCWJFS",
+    carModel : "Venza",
+    carYear : 2016
+  }
+
+]
+
+// const PersonA =
+
+// const PersonB = 
+
+const measurementList = [
+  {
+    head : 45,
+    neck : 22,
+    hand : 30,
+    leg : 33,
+    stomach : 30
+  },
+
+  {
+    head : 20,
+    neck : 28,
+    hand : 36,
+    leg : 40,
+    stomach : 30
+  }
+]
+
+// const userOne = 
+
+// const userTwo = 
+
+// const userThree = 
+
+
+const listOfUsers = [
+  {
+    name : "John Klep",
+    username : "jokl",
+    email : "john@gmail.com"
+  },
+
+  {
+    name : "Phillip Bassey",
+    username : "philb",
+    email : "phillip.b@gmail.com"
+  },
+
+  {
+    name : "Vivian Rohn",
+    username : "vivr",
+    email : "vivianr@gmail.com"
+  }
+]
+
+
+// ARRAY METHODS
+const countriesName = ["Nigeria", "Ghana", "Kenya"]
+countriesName.push("Uganda")
+
+console.log(countriesName)
+
+
+const countriesCode = ["Nigeria", "Ghana", "Kenya"]
+countriesCode.pop()
+
+console.log(countriesCode)
+
+
+const countries = ["Nigeria", "Ghana", "Kenya"]
+countries.unshift("Zambia")
+
+console.log(countries)
+
+
+const countriesNew = ["Nigeria", "Ghana", "Kenya"]
+countriesNew.shift("Zambia")
+
+console.log(countriesNew)
+
+
+// INDEXOF
+const countriesOld = ["Nigeria", "Ghana", "Kenya"]
+const resultOld = countriesOld.indexOf("Kenya")
+
+console.log(resultOld)
+
+
+const countriesList = ["Nigeria", "Ghana", "Kenya", "Zambia", "Congo", "Namibia"]
+const resultList = countriesList.includes("Cameron")
+
+console.log(resultList)
+
+
+const boys = ["Anderson", "Kunle", "Hassan"]
+const girls = ["Ene", "Faith", "Deborah"]
+
+const allStudent = boys.concat(girls)
+
+console.log(allStudent)
+
+
+
+// ARRAY CONTINUATION
+const arrayOfCountries = ["Namibia", "Germany", "Nigeria", "Ghana", "Botswana"]
+let resultArray = arrayOfCountries.slice(1, 2)
+
+console.log(resultArray)
+
+
+const arrayOfCountriesTwo = ["Namibia", "Germany", "Nigeria", "Ghana", "Botswana"]
+let resultArrayTwo = arrayOfCountriesTwo.splice(1, 1)
+
+console.log(resultArrayTwo)
+
+
+const arrayOfCountriesTwoo = ["Namibia", "Germany", "Nigeria", "Ghana", "Botswana", "South Africa", "Gambia"]
+let resultArrayTwoo = arrayOfCountriesTwoo.join(",")
+
+console.log(resultArrayTwoo)
+
+
+const arrayOfCountriesTwooo = ["Namibia", "Germany", "Nigeria", "Ghana", "Botswana", "Gambia"]
+let resultArrayTwooo = arrayOfCountriesTwooo.reverse()
+
+console.log(resultArrayTwooo)
+
+
+const arrayOfCountriesTwoooo = [3,2,9,1,9,0,42,5,7,4]
+let resultArrayTwoooo = arrayOfCountriesTwoooo.sort()
+
+console.log(resultArrayTwoooo)
+
+
+// LOOPS
+// FOR LOOP
+const arrayOfCountriesNew = ["Ghana", "Nigeria", "South Africa", "England"]
+
+// Initialization, condition & execution
+for (let x = 0; x < 3; x++ ){
+  let result = arrayOfCountriesNew[x]
+  console.log(result)
+}
+
+
+const arrayOfNames = ["Andrew", "Bieme", "Tom", "Amaka", "Paul"]
+
+for (let x = 0; x < 5; x++) {
+  let item = arrayOfNames[x]
+  console.log(item)
+}
+
+
+const arrayOfNumbers = [1, 2, 3, 4, 5, 6]
+const emptyArray = []
+
+for (let x = 0; x < 6; x++) {
+  let numberItems = arrayOfNumbers[x] * 3
+  emptyArray.push(numberItems)
+}
+
+console.log(emptyArray)
+
+
+const arrayOfStudents = ["John", "Jane", "Joel", "Joy", "Joshua"]
+
+for (let x = 0; x < 5; x++) {
+  let studentNumbers = arrayOfStudents[x] + "JSS3"
+  console.log(studentNumbers)
+}
+
+
+const studentRecords = [
+  {
+    fullname : "Joy Paul",
+    level : "Primary 6",
+    regNo : 354858,
+    averageScore : 77,
+    age : 14
+  },
+
+  {
+    fullname : "Joshua John",
+    level : "Primary 5",
+    regNo : 3548,
+    averageScore : 88,
+    age : 14
+  },
+
+  {
+    fullname : "Eunice Eke",
+    level : "Primary 6",
+    regNo : 104858,
+    averageScore : 98,
+    age : 15
+  }
+]
+
+// for (let x = 0; x < 3; x++) {
+//   let resultRecords = studentRecords [x]
+//   console.log(resultRecords)
+// }
+
+studentRecords.forEach((item, index, array) => {
+  console.log(item)
+  console.log(index)
+})
+
+
+const familyRecord = [
+  {
+    firstName : "Kamsi",
+    lastName : "Okeke",
+    age : 12,
+    CountryOfOrigin : "Nigeria",
+    CurrentResidency : "United States Of America",
+    homeAddress : "23, Sabotua Close, Fidelity Junction"
+  },
+
+  {
+    firstName : "Femi",
+    lastName : "Okeke",
+    age : 18,
+    CountryOfOrigin : "Nigeria",
+    CurrentResidency : "United States Of America",
+    homeAddress : "23, Sabotua Close, Fidelity Junction"
+  },
+
+  {
+    firstName : "Simon",
+    lastName : "Okeke",
+    age : 24,
+    CountryOfOrigin : "Nigeria",
+    CurrentResidency : "United States Of America",
+    homeAddress : "23, Sabotua Close, Fidelity Junction"
+  }
+]
+
+for (let x = 0; x < 3; x++) {
+  let recordedMember = familyRecord[x]
+  console.log(recordedMember)
+}
+
+
